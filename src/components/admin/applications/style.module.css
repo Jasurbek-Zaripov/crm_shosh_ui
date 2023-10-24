@@ -1,0 +1,19 @@
+
+.top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.box:nth-child(1){
+    width: 33% ;
+}
+.box:nth-child(2){
+    width: 27% ;
+}
+.box:nth-child(3){
+    width: 38% ;
+}
+.bottom{
+    width: 100%;
+    margin-top: 20px;
+}

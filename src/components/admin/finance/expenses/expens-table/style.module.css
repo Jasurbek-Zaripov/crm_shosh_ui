@@ -1,0 +1,22 @@
+.Tables{
+    display: flex;
+}
+.Table{
+text-align: center;
+}
+.Table span {
+    background: #EEEEEE;
+    border-right: 1px solid #d4d4d4;
+    padding: 12px;
+}
+.Totals{
+
+}
+.TableBottom p {
+    margin: 0;
+    background: #FAFAFA;
+    padding: 12px;
+    border: 1px solid #EBEBEB;
+    height: 40px;
+    width: 100%;
+}

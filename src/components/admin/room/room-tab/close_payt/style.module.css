@@ -1,0 +1,34 @@
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.buttons button:nth-child(1){
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    font-size: 24px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+.buttons button:nth-child(2){
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    font-size: 24px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+.Wrapper h3{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: black;
+    font-size: 28px;
+}
+.Calendar span{
+    color: black;
+    font-size: 20px; 
+}

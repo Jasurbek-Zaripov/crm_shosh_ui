@@ -1,0 +1,31 @@
+.ant-select-selector{
+    background-color: #EEEEEE !important;
+    font-weight: 600;
+    height:100% !important;
+    align-items: center !important;
+}
+.ant-select-arrow{
+    color: black !important;
+}
+.ant-select-selection-item{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    color: #181717;
+}
+.SelectDiv p {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    color: #1F1F1F;
+}
+.SelectDiv{
+        display: flex;
+        align-items: baseline;
+        flex-direction: column;
+}

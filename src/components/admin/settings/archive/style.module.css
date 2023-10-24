@@ -1,0 +1,7 @@
+
+.select_box{
+    display: flex;
+}
+.ant-select-selector{
+    height: 40px !important;
+}

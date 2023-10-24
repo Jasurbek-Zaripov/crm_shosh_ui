@@ -1,0 +1,201 @@
+.trigger {
+  padding: 0 24px;
+  font-size: 18px;
+  line-height: 64px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.trigger:hover {
+  color: #1890ff;
+}
+
+.logo {
+  height: 32px;
+  margin: 16px;
+  background: #5a79e5;
+}
+.ant-menu-item .ant-menu-item-selected {
+  background: #4769e1 !important;
+}
+.site-layout {
+  background-color: #eeeff5;
+}
+.ant-menu-dark .ant-menu-item-selected {
+  background-color: #4769e1 !important;
+}
+.ant-menu-dark .ant-menu-item-selected:active {
+  background-color: #4769e1 !important;
+}
+.left {
+  display: flex;
+  justify-content: space-between;
+  width: 570px;
+  align-items: center;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  width: 320px;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+.profile-right p:nth-child(1) {
+  margin: 0;
+  padding: 0;
+  line-height: 10px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: #181717;
+}
+.profile-right p:nth-child(2) {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  color: #484343;
+}
+.user-icon {
+  font-size: 25px;
+  border-radius: 50%;
+  color: #b2b3c1;
+}
+.profile button {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: #da454e;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 12px;
+}
+.icons {
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ant-notification-notice {
+  position: relative !important;
+  right: 0 !important;
+}
+
+.ant-notification-notice-content,
+.ant-notification-notice-btn {
+  width: 100%;
+}
+.ant-notification-notice {
+  padding: 15px !important;
+  width: 400px !important;
+  height: 370px;
+  overflow-y: scroll;
+}
+.notification-body {
+  width: 100%;
+}
+.body-item {
+  width: 100%;
+  cursor: pointer;
+}
+.ant-notification-close-x{
+  color: #000;
+  width: 5px !important;
+  height: 5px !important;
+}
+.users-wrapper {
+  display: flex;
+  align-items: center;
+}
+.user-wrapper {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.sent-dot{
+  background-color: red;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.icon-title > h3 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0;
+  line-height: 120%;
+  color: #181717;
+}
+.icon-title > p {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  margin: 0;
+  color: #777777;
+}
+.icon-box {
+  margin-right: 10px;
+}
+.icon-box > i {
+  font-size: 40px;
+  color: #dddddd;
+}
+.message-box {
+  width: 100% !important;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.message-box > p {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  /* identical to box height, or 17px */
+  color: #181717;
+}
+.message-box > time {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  /* or 14px */
+  color: #777777;
+}
+.ant-space-item{
+  width: 100% !important;
+}
+
+.task-div{
+  position: relative;
+}
+
+.task-length{
+  position: absolute;
+  background-color: red;
+  color: #fff;
+  /* padding: 2px; */
+  text-align: center;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  right: -10px;
+  top: 10px;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

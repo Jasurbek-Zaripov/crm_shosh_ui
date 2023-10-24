@@ -1,0 +1,14 @@
+.login{
+    padding: 20px;
+    height: 100%;
+}
+.top{
+    display: flex;
+    justify-content: flex-end;
+}
+.login_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}

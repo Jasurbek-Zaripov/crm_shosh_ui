@@ -1,0 +1,131 @@
+table,
+th,
+td {
+  border: 0.1px solid grey;
+}
+.chess_wrapper {
+  display: flex;
+  align-items: baseline;
+  width: 100%;
+  border: 1px solid #ebebeb;
+  border-radius: 10px;
+}
+.right {
+  width: 100%;
+  overflow-y: auto;
+}
+
+.right_top {
+  width: 100%;
+  height: 1279px;
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+.right_bottom > p {
+  border: 1px solid #cccccc;
+  padding: 8.6px;
+  background-color: #f1f1f1;
+  color: #181717;
+  margin: 0;
+}
+
+.left_item {
+  width: 40px;
+  height: 40px;
+  background: #fafafa;
+  border: 1px solid #ebebeb;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fafafa;
+}
+.left_item:last-child {
+  border-bottom-left-radius: 8px;
+}
+.left_item:first-child {
+  border-top-left-radius: 8px;
+}
+.left_item:nth-child(1) {
+  width: 40px;
+  height: 39px;
+  color: #f1f1f1;
+  background-color: #f1f1f1;
+  border: 1px solid #cccccc;
+}
+.rigthTop_item {
+  width: 40px;
+  height: 40px;
+  background: #eeeeee;
+  border: 1px solid #eeeeee;
+}
+
+.rooms_box {
+  position: relative;
+  background: #da226f !important;
+  width: 50px;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid #eeeeee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plus {
+  position: absolute;
+  bottom: -10px;
+  z-index: 10;
+  background: #ececec;
+  border: 1px solid #777777;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: #777777;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.rooms_boxs {
+  background: #fafafa;
+  border: 1px solid #ebebeb;
+  border-radius: 7px;
+  width: 50px;
+  height: 40px;
+}
+
+.box_tooltip {
+  padding: 10px;
+}
+.box_items > p {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  color: #181717;
+  margin: 2px 0;
+  
+}
+
+.box_items {
+  margin: 6px 0;
+}
+
+.room_modal {
+  position: absolute;
+  top: 0;
+  display: none;
+}
+.rooms_box:focus ~ .room_modal {
+  display: block;
+}

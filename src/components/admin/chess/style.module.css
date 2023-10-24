@@ -1,0 +1,82 @@
+.box{
+    background: #FFFFFF;
+box-shadow: 0px 10px 20px rgba(226, 228, 236, 0.2);
+border-radius: 20px;
+padding: 30px;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card p{
+    font-size: 18px;
+    padding: 10px 18px;
+    color: gray;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    border: 5px solid blueviolet;
+    border-radius: 50%;
+}
+.card2 p{
+    font-size: 18px;
+    padding: 10px 18px;
+    color: gray;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    border: 5px solid chocolate;
+    border-radius: 50%;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card3 p{
+    font-size: 18px;
+    padding: 10px 18px;
+    color: gray;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    border: 5px solid purple;
+    border-radius: 50%;
+}
+.card3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card4 p{
+    font-size: 12px;
+    padding: 20px 12px;
+    color: gray;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    border: 5px solid rgb(11, 212, 165);
+    border-radius: 50%;
+}
+.card4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.top i{
+    font-size: 24px;
+}
+h3{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 120%;
+    color: #181717;
+}

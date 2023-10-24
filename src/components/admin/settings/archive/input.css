@@ -1,0 +1,29 @@
+.rs-picker-toggle-textbox {
+  background: #ebebeb !important;
+  border-radius: 5px !important;
+}
+.rs-picker-toggle-caret.rs-icon {
+  position: absolute;
+  background: #5778ee;
+  border-radius: 5px;
+  margin-left: 10px;
+  right: 8px !important;
+
+  color: #fff;
+  font-size: 16px;
+  padding: 0 3px;
+  height: 20px;
+  width: 20px;
+}
+
+.rs-picker-toggle-caret.rs-icon > path {
+  font-size: 20px;
+}
+.rs-picker-toggle-wrapper{
+    position: relative  !important;
+}
+.rs-picker-menu {
+    position: absolute;
+  left: 307.578px !important;
+  top: 205.188px !important;
+}

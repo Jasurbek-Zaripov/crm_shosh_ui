@@ -1,0 +1,4 @@
+.client_form{
+    display: flex;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,115 @@
+
+.box{
+    background: #FFFFFF;
+box-shadow: 0px 10px 20px rgba(226, 228, 236, 0.2);
+border-radius: 20px;
+padding: 30px;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top h4 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 120%;
+    color: #181717;
+}
+.center{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.center_content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.center_content p {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #181717;
+}
+.center_content h5 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 120%;
+    color: #181717;
+}
+.tables{
+    height: 205px;
+    overflow-y: auto;
+}
+.table{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding-right: 10px;
+}
+.table_right  h3{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #181717;
+    margin-right: 10px;
+}
+.table  h3{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #181717;
+}
+.table_right{
+    display: flex;
+    align-items: center;
+}
+.table_right_left{
+    display: flex;
+    flex-direction: column;
+}
+.table_right_left p{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #000000;
+}
+
+.table_right_left span{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    color: #484343;
+}
+.title_table{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #181717;
+    margin: 0;
+    padding: 0;
+    margin-top: 25px;
+}

@@ -1,0 +1,46 @@
+.client_form{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.big_inputs{
+    display: flex;
+    flex-direction: column;
+}
+.bottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+input[type="file"] {
+    display: none;
+}
+.files_input {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin-top: 12px;
+}
+.label{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+.label span {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    color: #1F1F1F;
+    margin-bottom: 7px;
+}
+.button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}

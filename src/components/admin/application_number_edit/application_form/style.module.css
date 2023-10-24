@@ -1,0 +1,151 @@
+.inputs{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.application_select{
+    margin-left: 10px;
+    width: 180px;
+    height: 40px;
+}
+.bottom{
+    display: flex;
+    align-items: flex-end;
+}
+.bottom_left{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.colors p{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    color: #1F1F1F;
+}
+.colors input {
+    height: 40px;
+    width: 130px;
+}
+.color_div{
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    margin-left: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+.box{
+    border: 2px solid gray;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.application_form_stand p {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    color: #1F1F1F;
+}
+.inputdiv{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.inputdiv p {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    color: #1F1F1F;
+}
+.inputdiv input {
+    background: #5778EE;
+border-radius: 7px;
+color: white;
+padding: 11px 10px;
+outline: none;
+border: 1px solid #CCCCCC;
+}
+.inputdiv input:focus{
+border: 1px solid #5778EE;
+}
+.form{
+    width: 100%;
+}
+.Calendar{
+    margin-left: 10px;
+}
+.Calendar p{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    color: #1F1F1F;
+}
+
+
+.inputdivs{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.inputdivs p {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    color: #1F1F1F;
+}
+.inputdivs input {
+    background: #F5F5F5;
+border-radius: 7px;
+color: black;
+padding: 11px 10px;
+outline: none;
+border: 1px solid #CCCCCC;
+}
+.inputdivs input:focus{
+border: 1px solid #5778EE;
+}
+.TextAreadiv{
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    
+}
+.TextAreadiv p {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    color: #1F1F1F;
+}
+.TextAreadiv textarea {
+    background: #F5F5F5;
+border-radius: 7px;
+padding: 11px 10px;
+outline: none;
+border: 1px solid #CCCCCC;
+}
+.TextAreadiv textarea:focus{
+border: 1px solid #5778EE;
+
+}

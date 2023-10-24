@@ -1,0 +1,43 @@
+.table_expenses {
+  border-collapse: collapse;
+  border-radius: 50px;
+  border: 1px solid #eeeeee;
+  position: relative;
+  
+}
+
+th {
+  border: 1px solid #ebebeb;
+  padding: 11px;
+  text-align: center;
+}
+
+td {
+  padding: 0;
+}
+
+
+.table_header {
+  background: #eeeeee;
+  border: 1px solid #eeeeee;
+  border-radius: 3px !important;
+}
+.table_header > th {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  color: #181717;
+  border: 1px solid #ddd !important;
+}
+
+.relative{
+    position: relative;
+}
+
+.fixed{
+    background-color: red;
+    color: white;
+    bottom: 0;
+}

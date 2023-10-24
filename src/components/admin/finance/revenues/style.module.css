@@ -1,0 +1,17 @@
+.ant-table-cell {
+  column-span: 2 !important;
+  text-align: center !important;
+}
+.tableTitle {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120%;
+  color: #181717;
+  margin-top: 0;
+}
+
+.calendar{
+    margin-top: 30px;
+}

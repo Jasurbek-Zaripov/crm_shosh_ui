@@ -1,0 +1,135 @@
+.ant-tabs .ant-tabs-tab {
+  padding: 0 !important;
+  background: #ffffff !important;
+  /* box-shadow: 0px 4px 20px rgba(208, 210, 226, 0.15) !important; */
+  border-radius: 7px !important;
+  font-family: "Rubik" !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  line-height: 120% !important;
+  letter-spacing: 0.01em !important;
+  color: #000 !important;
+}
+
+.ant-tabs-top > .ant-tabs-nav::before {
+  border-bottom: none !important;
+}
+.ant-tabs-tab-active .ant-tabs-tab {
+  padding: 0 !important;
+  background: #158e28 !important;
+  box-shadow: 0px 4px 20px rgba(208, 210, 226, 0.15) !important;
+  border-radius: 7px !important;
+  font-family: "Rubik" !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  line-height: 120% !important;
+  letter-spacing: 0.01em !important;
+  color: #fff !important;
+}
+
+.ant-tabs-tab-btn {
+  padding: 11px 60px !important;
+  color: #000 !important;
+  text-shadow: none !important;
+  background: #ffffff !important;
+  box-shadow: 0px 4px 20px rgba(208, 210, 226, 0.15) !important;
+  border-radius: 7px !important;
+}
+.ant-tabs-tab-active .ant-tabs-tab-btn {
+  width: 100% !important;
+  height: 100% !important;
+  padding: 11px 60px !important;
+  background: #158e28 !important;
+  box-shadow: 0px 4px 20px rgba(208, 210, 226, 0.15) !important;
+  border-radius: 7px !important;
+  font-family: "Rubik" !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  line-height: 120% !important;
+  letter-spacing: 0.01em !important;
+  color: #fff !important;
+}
+
+.ant-tabs-content {
+  background: #ffffff !important ;
+  box-shadow: 0px 10px 20px rgba(226, 228, 236, 0.2) !important;
+  border-radius: 20px !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px !important;
+  height: 5px !important;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #5a79e5;
+  border-radius: 50px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #5a79e5 !important;
+  border-radius: 50px !important;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555 !important ;
+}
+
+.btn-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.btn-box > button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.edit-btn {
+  color: #5778ee;
+  font-size: 30px;
+}
+.delete-btn {
+  color: #da454e;
+  font-size: 30px;
+}
+
+.ant-table-cell {
+  text-align: center !important;
+  font-family: "Rubik" !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 120% !important;
+  /* identical to box height, or 17px */
+  color: #181717 !important;
+  padding: 12px !important;
+}
+
+.ant-tabs-content-holder{
+    margin-top: 50px !important;
+}
+.header_table {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.table-header {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120%;
+  color: #181717;
+  margin: 0;
+}

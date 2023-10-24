@@ -1,0 +1,8 @@
+.Wrapper{
+    overflow-y: auto;
+}
+
+.Image{
+    width: 100% !important;
+    height: 80% !important;
+}

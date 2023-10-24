@@ -1,0 +1,31 @@
+.tableTitle {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120%;
+  color: #181717;
+  margin: 0;
+}
+
+.modal_title {
+  text-align: center;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+  color: #1e1e1e;
+}
+
+.header_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.expens_select {
+  width: 100% !important;
+  height: 40px !important;
+}

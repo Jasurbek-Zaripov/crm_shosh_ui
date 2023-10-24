@@ -1,0 +1,240 @@
+.room_title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120%;
+  color: #181717;
+}
+.Wrapper {
+  padding: 15px;
+  /* width: 97% !important; */
+}
+.print_heading{
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik";
+  font-style: normal;
+
+  font-size: 28px;
+}
+.logo_wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo_wrap > img {
+  height: 200px;
+  width: 200px;
+}
+
+.content_box {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.content_box > h2 {
+  text-transform: uppercase;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 120%;
+  color: #181717;
+}
+.content_box > p {
+  text-decoration: underline;
+  margin: 0 0 6px 0;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 120%;
+  color: #181717;
+}
+.user_name_info > h4 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  color: #181717;
+}
+.room_title > span:nth-child(2) {
+  margin-left: 10px;
+}
+
+/* .scrol_div{
+  width: 100%;
+  height: 300px;
+  border: 1px solid red;
+  overflow-y: scroll;
+} */
+.user_info {
+  width: 100%;
+
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.user_name_info {
+  width: 100%;
+}
+.user_name_info > h2 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 120%;
+  color: #181717;
+  margin: 0;
+}
+.datas_box {
+  margin-top: 10px;
+}
+
+.data_h4 {
+  margin: 0 0 0 0;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  color: #181717;
+}
+.data_p {
+  margin: 0 0 0 0;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: #484343;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.data_p > span:nth-child(1) {
+  margin-right: 10px;
+}
+
+.data_p > i {
+  font-size: 20px;
+  margin: 0 5px;
+}
+.data_arrival,
+.data_departure {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+.user_country {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.user_country > p {
+  margin-top: 35px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+  color: #111111;
+}
+.user_country > p:nth-child(2) {
+  margin-top: 0;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  color: #111111;
+}
+
+.kvitansiya_table {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.kvitansiya_table > table {
+  font-family: "Rubik";
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.kvitansiya_table > table:nth-child(2) {
+  margin-top: 30px;
+}
+.kvitansiya_table > table:nth-child(3) {
+  margin-top: 30px;
+}
+
+.kvitansiya_table > table:nth-child(4) {
+  margin-top: 30px;
+}
+
+.td,
+.th {
+  text-align: left;
+  padding: 12px 5px;
+}
+.th {
+  border-top: 7px solid rgb(90, 121, 229);
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 120%;
+  color: #181717;
+}
+.td {
+  border-top: 3px solid rgb(90, 121, 229);
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 120%;
+  color: #181717;
+}
+.print_footer{
+  width: 100%;
+}
+.print_footer > h2{
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 120%;
+  color: #181717;
+}
+.print_footer_wrapp{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.print_footer_item > p {
+  margin: 8px 0;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  color: #181717;
+}
+.p_bold{
+  font-weight: bold !important;
+}
+.p_email{
+  font-size: 17px;
+}

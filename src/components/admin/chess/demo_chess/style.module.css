@@ -1,0 +1,88 @@
+.application_select{
+    margin-left: 10px;
+    width: 180px;
+    height: 40px;
+}
+.select{
+    width: 90%;
+    height: 50px;
+    background: #F5F5F5;
+    border: 1px solid #CCCCCC;
+    border-radius: 7px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    cursor: pointer;
+}
+select option span{
+    font-size: 60px !important;
+}
+.SelectRoomEdit{
+    padding: 20px;
+    border: 1px solid rgb(196, 196, 196);
+    background-color: rgb(245, 245, 245);
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.form_text{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    color: #1F1F1F;
+    text-align: center;
+}
+.Calendar{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.Calendar p{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    color: #1F1F1F;
+}
+
+.inputdiv{
+    display: flex;
+    flex-direction: column;
+    width: 92%;
+    margin: 0 auto;
+}
+.inputdiv p {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    color: #1F1F1F;
+}
+.inputdiv input {
+    background: #5778EE;
+border-radius: 7px;
+color: white;
+padding: 18px 10px;
+outline: none;
+border: 1px solid #CCCCCC;
+}
+.inputdiv input:focus{
+border: 1px solid #5778EE;
+}
