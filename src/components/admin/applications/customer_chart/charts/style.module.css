@@ -1,7 +1,8 @@
 
-.charts{
+.charts {
     margin-top: 62px;
 }
-.charts .recharts-wrapper .recharts-legend-wrapper .recharts-default-legend{
+
+.charts .recharts-wrapper .recharts-legend-wrapper .recharts-default-legend {
     display: none !important;
 }

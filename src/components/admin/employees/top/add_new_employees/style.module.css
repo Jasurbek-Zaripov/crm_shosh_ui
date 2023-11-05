@@ -1,33 +1,39 @@
-.client_form{
+.client_form {
     width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.big_inputs{
+
+.big_inputs {
     display: flex;
     flex-direction: column;
 }
-.bottom{
+
+.bottom {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
+
 input[type="file"] {
     display: none;
 }
+
 .files_input {
     display: flex;
     flex-direction: column;
     width: 45%;
     margin-top: 12px;
 }
-.label{
+
+.label {
     display: flex;
     flex-direction: column;
     margin-bottom: 12px;
     cursor: pointer;
 }
+
 .label span {
     font-family: 'Rubik';
     font-style: normal;
@@ -38,7 +44,8 @@ input[type="file"] {
     color: #1F1F1F;
     margin-bottom: 7px;
 }
-.button{
+
+.button {
     width: 100%;
     display: flex;
     justify-content: center;

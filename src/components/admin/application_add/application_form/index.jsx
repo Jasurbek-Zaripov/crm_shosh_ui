@@ -111,10 +111,8 @@ function ApplictionForm({id}) {
         );
         if (dataUser.role === 'Admin') {
             navigate(`/admin/applicationadd/${window.localStorage.getItem("OrdersData")}`)
-            window.location.reload()
         } else if (dataUser.role === 'manager') {
             navigate(`/manager/applicationadd/${window.localStorage.getItem("OrdersData")}`)
-            window.location.reload()
         }
 
         window.location.reload()
@@ -129,7 +127,7 @@ function ApplictionForm({id}) {
                     <>
                         <span style={{marginRight: "3px"}}>{elem.rooms}</span> |
                         <span style={{marginLeft: "3px", marginRight: "3px"}}>{elem.type}</span> |
-                        <span style={{marginLeft: "3px"}}>{elem.count} <i class='bx bxs-user' style={{
+                        <span style={{marginLeft: "3px"}}>{elem.count} <i className='bx bxs-user' style={{
                             position: "relative",
                             top: "1px"
                         }}></i></span>
@@ -305,16 +303,16 @@ function ApplictionForm({id}) {
                             </button>
                         )}
                     </div>
-                    <div class="radio-item-container">
-                        <div class="radio-item">
-                            <label for="vanilla" onChange={(e) => setActive(e.target.value)}>
+                    <div className="radio-item-container">
+                        <div className="radio-item">
+                            <label htmlFor="vanilla" onChange={(e) => setActive(e.target.value)}>
                                 <input type="radio" id="vanilla" name="flavor" value="active"/>
                                 <span>{t("application_add.39")}</span>
                             </label>
                         </div>
 
-                        <div class="radio-item">
-                            <label for="chocolate" onChange={(e) => setActive(e.target.value)}>
+                        <div className="radio-item">
+                            <label htmlFor="chocolate" onChange={(e) => setActive(e.target.value)}>
                                 <input type="radio" id="chocolate" name="flavor" value="not_active"/>
                                 <span>{t("application_add.40")} </span></label>
                         </div>

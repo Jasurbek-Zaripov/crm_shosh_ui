@@ -1,32 +1,34 @@
 .upload_label {
-  cursor: pointer;
-  font-family: "Rubik";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 120%;
-  /* or 19px */
+    cursor: pointer;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    /* or 19px */
 
-  letter-spacing: 0.01em;
+    letter-spacing: 0.01em;
 
-  color: #1f1f1f;
+    color: #1f1f1f;
 }
 
-.personal_form{
+.personal_form {
     width: 100%;
     display: flex;
     align-items: top;
 }
-.inputs{
+
+.inputs {
     width: 30%;
     margin-left: 100px;
 }
-.img_aploud{
+
+.img_aploud {
     margin-top: 20px;
 }
 
 
-.icon_box{
+.icon_box {
     display: flex;
     align-items: center;
     justify-content: center;

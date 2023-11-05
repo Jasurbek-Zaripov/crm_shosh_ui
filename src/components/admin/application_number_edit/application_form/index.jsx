@@ -305,7 +305,7 @@ function ApplictionForm({id}) {
                         <span style={{marginLeft: "3px"}}>
                 {elem.count}{" "}
                             <i
-                                class="bx bxs-user"
+                                className={"bx bxs-user"}
                                 style={{position: "relative", top: "1px"}}
                             ></i>
               </span>

@@ -1,14 +1,16 @@
-.box{
+.box {
     background: #FFFFFF;
-box-shadow: 0px 10px 20px rgba(226, 228, 236, 0.2);
-border-radius: 20px;
-padding: 30px;
+    box-shadow: 0px 10px 20px rgba(226, 228, 236, 0.2);
+    border-radius: 20px;
+    padding: 30px;
 }
-.top{
+
+.top {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .top h4 {
     margin: 0;
     padding: 0;

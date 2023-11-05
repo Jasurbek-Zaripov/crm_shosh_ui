@@ -1,8 +1,9 @@
-.client_form{
+.client_form {
     display: flex;
     flex-wrap: wrap;
 }
-.buttons{
+
+.buttons {
     display: flex;
     justify-content: space-around;
     margin-top: 70px;

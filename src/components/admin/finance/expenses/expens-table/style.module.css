@@ -1,17 +1,21 @@
-.Tables{
+.Tables {
     display: flex;
 }
-.Table{
-text-align: center;
+
+.Table {
+    text-align: center;
 }
+
 .Table span {
     background: #EEEEEE;
     border-right: 1px solid #d4d4d4;
     padding: 12px;
 }
-.Totals{
+
+.Totals {
 
 }
+
 .TableBottom p {
     margin: 0;
     background: #FAFAFA;

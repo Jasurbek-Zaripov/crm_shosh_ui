@@ -1,17 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import "./i18next"
-import App from './App';
+import { Provider } from 'react-redux';
 import { BrowserRouter as Router } from 'react-router-dom';
-import {Provider} from "react-redux"
+import App from './App';
+import './i18next';
 import { store } from './redux/store';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <Provider store={store}>
+  <Provider store={store}>
     <Router>
-    <App />
+      <App />
     </Router>
-    </Provider>
-  </React.StrictMode>
+  </Provider>
 );

@@ -1,8 +1,9 @@
-.wrapper{
+.wrapper {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
 }
+
 .wrapper h3 {
     margin: 0;
     padding: 0;

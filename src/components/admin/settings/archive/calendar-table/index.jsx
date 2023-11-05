@@ -1,15 +1,11 @@
-import React from "react";
+import React, {useEffect} from "react";
 import TableCommon from "../../../../../common/table/index";
-import {dataTable} from "./tableData";
 import {useTranslation} from "react-i18next";
 import {Table} from "antd";
 import {NavLink} from "react-router-dom";
-import styled from "styled-components";
 import styles from './styled.module.css'
-import {useEffect} from "react";
-import {OrdersBusyGet, OrdersGet} from "../../../../../redux/orders";
+import {OrdersGet} from "../../../../../redux/orders";
 import {useDispatch, useSelector} from "react-redux";
-import {NumericFormat} from 'react-number-format';
 
 const CalendarTableArxiv = () => {
     const {t} = useTranslation();

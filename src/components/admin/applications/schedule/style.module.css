@@ -1,15 +1,17 @@
 
-.box{
+.box {
     background: #FFFFFF;
-box-shadow: 0px 10px 20px rgba(226, 228, 236, 0.2);
-border-radius: 20px;
-padding: 30px;
+    box-shadow: 0px 10px 20px rgba(226, 228, 236, 0.2);
+    border-radius: 20px;
+    padding: 30px;
 }
-.top{
+
+.top {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .top h4 {
     margin: 0;
     padding: 0;
@@ -20,16 +22,19 @@ padding: 30px;
     line-height: 120%;
     color: #181717;
 }
-.center{
+
+.center {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
 }
-.center_content{
+
+.center_content {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
+
 .center_content p {
     font-family: 'Rubik';
     font-style: normal;
@@ -38,6 +43,7 @@ padding: 30px;
     line-height: 120%;
     color: #181717;
 }
+
 .center_content h5 {
     margin: 0;
     padding: 0;
@@ -48,17 +54,20 @@ padding: 30px;
     line-height: 120%;
     color: #181717;
 }
-.tables{
+
+.tables {
     height: 205px;
     overflow-y: auto;
 }
-.table{
+
+.table {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
     padding-right: 10px;
 }
-.table_right  h3{
+
+.table_right h3 {
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 400;
@@ -67,7 +76,8 @@ padding: 30px;
     color: #181717;
     margin-right: 10px;
 }
-.table  h3{
+
+.table h3 {
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 400;
@@ -75,15 +85,18 @@ padding: 30px;
     line-height: 120%;
     color: #181717;
 }
-.table_right{
+
+.table_right {
     display: flex;
     align-items: center;
 }
-.table_right_left{
+
+.table_right_left {
     display: flex;
     flex-direction: column;
 }
-.table_right_left p{
+
+.table_right_left p {
     margin: 0;
     padding: 0;
     font-family: 'Rubik';
@@ -94,7 +107,7 @@ padding: 30px;
     color: #000000;
 }
 
-.table_right_left span{
+.table_right_left span {
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 400;
@@ -102,7 +115,8 @@ padding: 30px;
     line-height: 120%;
     color: #484343;
 }
-.title_table{
+
+.title_table {
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 400;

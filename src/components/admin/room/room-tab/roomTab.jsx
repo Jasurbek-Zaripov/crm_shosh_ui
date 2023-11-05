@@ -161,7 +161,7 @@ const RoomTab = ({dataFind, id}) => {
                         </Button>
                     ) : (
                         <Button
-                            disabled={true}
+                            disable={true}
                             style={{
                                 fontSize: "14px",
                                 fontWeight: "400",
@@ -212,7 +212,7 @@ const RoomTab = ({dataFind, id}) => {
                             {t("Room.23")}
                         </Button>) : (
                         <Button
-                            disabled={true}
+                            disable={true}
                             onClick={HandleRoomClose}
                             style={{
                                 fontSize: "14px",

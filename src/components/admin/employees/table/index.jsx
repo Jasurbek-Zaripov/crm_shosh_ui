@@ -4,13 +4,12 @@ import TableCommon from "../../../../common/table";
 import plus from "./../../../../assets/employees/plus.png";
 import ModalCommon from "../../../../common/modal/index";
 import styles from "./style.module.css";
-import {useFormik} from "formik";
 import Input from "../../../../common/input";
 import SelectCommon from "../../../../common/select";
 import Button from "../../../../common/button";
 import {StaffGet} from "../../../../redux/employess";
 import {TaskGet, TaskPost} from "../../../../redux/task/index";
-import {useSelector, useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 
 function Table() {
     const {t} = useTranslation();

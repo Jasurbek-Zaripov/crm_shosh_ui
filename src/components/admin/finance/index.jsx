@@ -1,8 +1,5 @@
 import React, {useState} from "react";
 import Revenues from "./revenues";
-import Button from "../../../common/button/index";
-import revenues from "../../../assets/finance-image/revenues.png";
-import expenses from "../../../assets/finance-image/expenses.png";
 import styles from "./style.module.css";
 import {useTranslation} from "react-i18next";
 import Expenses from "./expenses";

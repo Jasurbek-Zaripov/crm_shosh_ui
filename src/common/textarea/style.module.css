@@ -1,8 +1,9 @@
-.TextAreadiv{
+.TextAreadiv {
     display: flex;
     align-items: baseline;
     flex-direction: column;
 }
+
 .TextAreadiv p {
     font-family: 'Rubik';
     font-style: normal;
@@ -12,14 +13,16 @@
     letter-spacing: 0.01em;
     color: #1F1F1F;
 }
+
 .TextAreadiv textarea {
     background: #F5F5F5;
-border-radius: 7px;
-padding: 11px 10px;
-outline: none;
-border: 1px solid #CCCCCC;
+    border-radius: 7px;
+    padding: 11px 10px;
+    outline: none;
+    border: 1px solid #CCCCCC;
 }
-.TextAreadiv textarea:focus{
-border: 1px solid #5778EE;
+
+.TextAreadiv textarea:focus {
+    border: 1px solid #5778EE;
 
 }

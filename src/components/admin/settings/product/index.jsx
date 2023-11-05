@@ -95,7 +95,7 @@ const Product = () => {
                                     fontSize: "30px",
                                 }}
                             >
-                                <i class="bx bx-edit-alt" id={elem.id}></i>
+                                <i className="bx bx-edit-alt" id={elem.id}></i>
                             </Button>
                             <Button
                                 id={elem.id}
@@ -109,7 +109,7 @@ const Product = () => {
                                     fontSize: "30px",
                                 }}
                             >
-                                <i class="bx bx-trash" id={elem.id}></i>
+                                <i className="bx bx-trash" id={elem.id}></i>
                             </Button>
                         </div>
                     )

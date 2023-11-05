@@ -3,11 +3,12 @@ import Table from "./table"
 import Top from "./top"
 
 function EmployeesComponent() {
-    return(
+    return (
         <div className={styles.box}>
-        <Top/>
-        <Table/>
+            <Top/>
+            <Table/>
         </div>
     )
 }
+
 export default EmployeesComponent

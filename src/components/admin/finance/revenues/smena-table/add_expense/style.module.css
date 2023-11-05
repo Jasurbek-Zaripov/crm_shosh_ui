@@ -1,8 +1,9 @@
-.application_select{
+.application_select {
     margin-left: 10px;
     width: 200px;
     height: 40px;
 }
+
 .form {
     display: flex;
     flex-wrap: wrap;

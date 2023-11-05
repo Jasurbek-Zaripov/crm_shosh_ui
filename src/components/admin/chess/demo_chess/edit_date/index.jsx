@@ -50,7 +50,7 @@ const EditDate = ({open, onCancel, tempEvent}) => {
         window.location.reload();
     }
     return (
-        <ModalCommon open={open} onCancel={onCancel} titleText={t("сhess.20")}>
+        <ModalCommon open={open} onCancel={onCancel} titleText={t("chess.20")}>
             <div className={styles.Calendar}>
                 <p>{t("application_add.9")}</p>
                 <LocalizationProvider dateAdapter={AdapterDayjs}>
@@ -78,7 +78,7 @@ const EditDate = ({open, onCancel, tempEvent}) => {
                 color="success"
                 onClick={handleEdit}
             >
-                {t("сhess.17")}
+                {t("chess.17")}
             </Button>
         </ModalCommon>
     )

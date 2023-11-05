@@ -1,0 +1,34 @@
+.ant-select-selector {
+  background-color: white !important;
+}
+
+#AdditServiesComponent input,
+#AdditServiesComponent select,
+#AdditServiesComponent textarea {
+  background-color: white !important;
+}
+
+hr {
+  margin: 1rem 0;
+}
+
+#AdditServiesComponent button[type='submit'] {
+  white-space: nowrap;
+  padding: 13px 18px !important;
+}
+
+#AdditServiesComponent textarea {
+  min-height: 82px;
+  resize: vertical !important;
+}
+
+#AdditServiesComponent form .SelectDiv:first-child {
+  display: none !important;
+}
+
+#AdditServiesComponent form div[class^='style_item_box'] {
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1), 0 -4px 6px -1px rgb(0 0 0 / 0.1),
+    0 -2px 4px -2px rgb(0 0 0 / 0.1);
+  border-radius: 5px;
+  padding: 1rem;
+}

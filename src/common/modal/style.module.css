@@ -1,21 +1,25 @@
-.Modal .ant-modal-footer{
+.Modal .ant-modal-footer {
     display: none !important;
 }
-.content .ant-modal-close{
+
+.content .ant-modal-close {
     display: none !important;
 }
-.modalclose{
+
+.modalclose {
     width: 100%;
     display: flex;
     justify-content: end;
 }
+
 .modalclose i {
-    color:#6b6565;
+    color: #6b6565;
     font-size: 40px;
     font-weight: 300;
     cursor: pointer;
 }
-.content h3{
+
+.content h3 {
     margin: 0;
     padding: 0;
     font-family: 'Rubik';

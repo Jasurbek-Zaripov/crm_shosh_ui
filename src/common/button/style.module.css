@@ -1,4 +1,4 @@
-.btn{
+.btn {
     background: #158E28;
     border-radius: 5px;
     color: white;
@@ -7,6 +7,7 @@
     border: none;
     font-family: 'Rubik';
 }
+
 .btn_disabled {
     background: #35b94962;
     border-radius: 5px;

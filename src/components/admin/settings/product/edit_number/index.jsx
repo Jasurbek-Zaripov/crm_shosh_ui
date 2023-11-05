@@ -1,4 +1,4 @@
-import {useEffect, useState} from "react"
+import {useState} from "react"
 import {useTranslation} from "react-i18next"
 import {useDispatch, useSelector} from "react-redux";
 import Button from "../../../../../common/button";
@@ -6,7 +6,6 @@ import Input from "../../../../../common/input";
 import ModalCommon from "../../../../../common/modal"
 import SelectCommon from "../../../../../common/select";
 import {ProductsGet, ProductsPut} from "../../../../../redux/products";
-import {RoomsGet, RoomsPost, RoomsPut} from "../../../../../redux/rooms";
 import styles from "./style.module.css"
 
 function NumberEdit({open, HandleClose, dataId}) {

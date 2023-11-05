@@ -1,26 +1,30 @@
-.btn_wrapper{
+.btn_wrapper {
     width: 70%;
     display: flex;
     justify-content: space-between;
     margin-left: auto;
     padding-top: 20px
 }
-.buttons{
+
+.buttons {
     display: flex;
     justify-content: space-evenly;
     margin-top: 20px;
 }
-.buttons{
+
+.buttons {
     display: flex;
     justify-content: space-evenly;
     margin-top: 20px;
 }
-.buttonsClose{
+
+.buttonsClose {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 20px;   
+    margin-top: 20px;
 }
-.buttonsClose button:nth-child(1){
+
+.buttonsClose button:nth-child(1) {
     background-color: red;
     color: white;
     border-radius: 5px;
@@ -30,7 +34,8 @@
     cursor: pointer;
     width: 80px;
 }
-.buttonsClose button:nth-child(2){
+
+.buttonsClose button:nth-child(2) {
     background-color: green;
     color: white;
     border-radius: 5px;
@@ -40,7 +45,8 @@
     border: none;
     cursor: pointer;
 }
-.Wrapper i{
+
+.Wrapper i {
     font-size: 120px;
     width: 100%;
     display: flex;
@@ -48,7 +54,7 @@
     margin: 0 auto;
 }
 
-.buttons button:nth-child(1){
+.buttons button:nth-child(1) {
     background-color: green;
     color: white;
     border-radius: 5px;
@@ -58,13 +64,15 @@
     cursor: pointer;
     width: 90%;
 }
-.Wrapper h3{
+
+.Wrapper h3 {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
     color: black;
 }
-.buttonExcel{
+
+.buttonExcel {
     background: #158E28;
     border-radius: 5px;
     color: white;
@@ -73,7 +81,8 @@
     border: none;
     font-family: 'Rubik';
 }
-.buttonExcelDisabled{
+
+.buttonExcelDisabled {
     border-radius: 5px;
     color: white;
     padding: 11px 11px;

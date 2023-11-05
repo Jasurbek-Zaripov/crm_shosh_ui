@@ -36,7 +36,7 @@
     width: 200px;
 }
 
-.md-event-listing-link{
+.md-event-listing-link {
     display: inline-block;
     text-decoration: none;
     background-color: #158E28;
@@ -88,24 +88,28 @@
     order: 5;
 }
 
-.mbsc-button-group{
+.mbsc-button-group {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.mbsc-timeline-resource, .mbsc-timeline-sidebar-resource{
+
+.mbsc-timeline-resource, .mbsc-timeline-sidebar-resource {
     background-color: #FAFAFA;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.mbsc-timeline-resources.mbsc-ltr{
+
+.mbsc-timeline-resources.mbsc-ltr {
     width: 70px;
 }
-.mbsc-timeline-resource-col, .mbsc-timeline-sidebar-col{
+
+.mbsc-timeline-resource-col, .mbsc-timeline-sidebar-col {
     width: 70px !important;
 }
-.mbsc-timeline-header-date{
+
+.mbsc-timeline-header-date {
     height: 50px;
     background-color: #EEEEEE;
     display: flex;
@@ -113,39 +117,47 @@
     justify-content: center;
     width: 100% !important;
 }
-.mbsc-ios.mbsc-timeline-header-active:after{
-   /* height: 100px; */
-   /* width: 100px; */
-   top: 0;
-   right: 0;
-   bottom: 0;
-   left: 0;
-    border-radius:10px;
+
+.mbsc-ios.mbsc-timeline-header-active:after {
+    /* height: 100px; */
+    /* width: 100px; */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
 }
-.mbsc-calendar-header{
+
+.mbsc-calendar-header {
     background-color: white !important;
 }
-.mbsc-windows-dark.mbsc-segmented-button.mbsc-button{
+
+.mbsc-windows-dark.mbsc-segmented-button.mbsc-button {
     background-color: #5A79E5 !important;
 }
-.mbsc-windows-dark.mbsc-segmented-button.mbsc-button.mbsc-selected{
+
+.mbsc-windows-dark.mbsc-segmented-button.mbsc-button.mbsc-selected {
     background-color: #192a6a !important;
     color: white !important;
 }
-.mbsc-timeline-resource-header-cont{
-    background-color:#EEEEEE !important;
+
+.mbsc-timeline-resource-header-cont {
+    background-color: #EEEEEE !important;
 }
 
-.mbsc-ios.mbsc-schedule-event{
+.mbsc-ios.mbsc-schedule-event {
     border-top-left-radius: 25px !important;
     border-bottom-right-radius: 25px !important;
 }
-.mbsc-schedule-event-inner{
+
+.mbsc-schedule-event-inner {
     padding: 8px !important;
 }
-.mbsc-windows-dark.mbsc-popup{
+
+.mbsc-windows-dark.mbsc-popup {
     background-color: white !important;
 }
+
 /* .mbsc-timeline.mbsc-ltr{
     transform: rotate(90deg) !important;
 } */
@@ -153,7 +165,7 @@
     position: relative;
     width: 7000px !important;
 } */
-.rooms-spanss{
+.rooms-spanss {
     z-index: 1000;
     color: black;
     width: 100%;
@@ -164,18 +176,20 @@
     font-size: 24px;
     font-weight: 600;
 }
-.radio-item-container{
+
+.radio-item-container {
     z-index: 1000 !important;
 }
 
-.radio-item-container{
+.radio-item-container {
     z-index: 1000 !important;
     width: 100%;
     display: flex;
     margin: 0 auto;
     justify-content: center;
 }
-.radio-item span{
+
+.radio-item span {
     z-index: 1000;
     color: black;
     width: 100%;
