@@ -27,8 +27,14 @@ hr {
 }
 
 #AdditServiesComponent form div[class^='style_item_box'] {
-  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1), 0 -4px 6px -1px rgb(0 0 0 / 0.1),
-    0 -2px 4px -2px rgb(0 0 0 / 0.1);
-  border-radius: 5px;
+    box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.2);
+  border-radius: 10px;
   padding: 1rem;
+}
+
+.instant_booking_box_shadow  {
+    background-color: white;
+    box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.2);
+    border-radius: 10px;
+    padding: 1rem;
 }

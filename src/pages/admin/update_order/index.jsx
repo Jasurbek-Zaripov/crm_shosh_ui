@@ -101,6 +101,7 @@ export default function UpdateOrder() {
         <Form
           layout={'vertical'}
           form={form}
+          className={'instant_booking_box_shadow'}
           name="instant-booking"
           onFinish={onFinish}
         >
@@ -286,10 +287,12 @@ export default function UpdateOrder() {
         <hr />
 
         {order && (
+            <div className={'instant_booking_box_shadow'}>
           <UpdateOrderUser
             users={order.users}
             setRefreshOrder={setRefreshOrder}
           />
+            </div>
         )}
 
         <hr />

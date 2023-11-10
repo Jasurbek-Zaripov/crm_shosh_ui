@@ -1,28 +1,32 @@
-import WysiwygIcon from '@mui/icons-material/Wysiwyg';
-import { Button } from 'antd';
-import dayjs from 'dayjs';
-import { useState } from 'react';
-import { useTranslation } from 'react-i18next';
-import { useParams } from 'react-router-dom';
-import { UserCreate, UserDelete, UserUpdate } from '../../../axios_service/axios.service.ts';
-import ModalUserEdit from '../modal_user_edit';
-import './style.css';
+import WysiwygIcon from "@mui/icons-material/Wysiwyg";
+import { Button } from "antd";
+import dayjs from "dayjs";
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
+import { useParams } from "react-router-dom";
+import {
+  UserCreate,
+  UserDelete,
+  UserUpdate,
+} from "../../../axios_service/axios.service.ts";
+import ModalUserEdit from "../modal_user_edit";
+import "./style.css";
 
-const mustKeys = ['name', 'surname', 'father_name', 'seriya', 'number'];
-const dateFormat = 'YYYY-MM-DD';
+const mustKeys = ["name", "surname", "father_name", "seriya", "number"];
+const dateFormat = "YYYY-MM-DD";
 
 export default function UpdateOrderUser({ users, setRefreshOrder }) {
   const { id: paramOrderId } = useParams();
   const { t } = useTranslation();
   const [user, setUser] = useState(null);
 
-  const onDelete = userId => {
+  const onDelete = (userId) => {
     UserDelete(userId).then(() => setRefreshOrder(true));
   };
   const onUpdate = ({ id, ...data }) => {
     data.dateof = dayjs(data.dateof).format(dateFormat);
     data.birthday = dayjs(data.birthday).format(dateFormat);
-    if (id != -1) {
+    if (id !== -1) {
       UserUpdate(id, data).then(() => setRefreshOrder(true));
     } else {
       data.orders = paramOrderId;
@@ -36,17 +40,19 @@ export default function UpdateOrderUser({ users, setRefreshOrder }) {
         <thead>
           <tr>
             <th>#</th>
-            {mustKeys.map(k => (
-              <th key={k}>{k}</th>
-            ))}
+            <th>{t("application_add.26")}</th>
+            <th>{t("application_add.25")}</th>
+            <th>{t("application_add.27")}</th>
+            <th>{t("application_add.28")}</th>
+            <th>{t("application_add.22")}</th>
             <th></th>
           </tr>
         </thead>
         <tbody>
-          {users.map((user, i) => (
+          {[{ id: -1 }].concat(users).map((user, i) => (
             <tr key={user.id}>
               <td>{i + 1}</td>
-              {mustKeys.map(userKey => (
+              {mustKeys.map((userKey) => (
                 <td key={user.id + userKey + i}>{user[userKey]}</td>
               ))}
               <td>
