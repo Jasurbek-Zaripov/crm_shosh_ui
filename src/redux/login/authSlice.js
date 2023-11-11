@@ -51,7 +51,6 @@ let authSlice = createSlice({
       state.UserDataVerfiy = action.payload.verifyUserData;
     },
     [Auth.rejected]: (state, action) => {
-      console.log("redux: ", action.payload);
       state.Success = false;
       state.Loading = false;
       state.Error = action.payload;

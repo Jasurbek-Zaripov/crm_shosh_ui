@@ -7,19 +7,20 @@ import "./chess.css";
 import "./app.css";
 import dayjs from "dayjs";
 
-const dateFormat = "YYYY-MM-DD";
-
 function DemoChess() {
   const [rooms, setRooms] = useState([]);
   const [orders, setOrders] = useState([]);
-  const dataUser = JSON.parse(window.localStorage.getItem("AuthDataUser"));
   const navigate = useNavigate();
   const { t } = useTranslation();
   const [columns, setColumns] = useState(null);
+  const [dataSource, setDataSource] = useState([]);
+  const [loading, setLoading] = useState(false);
   const [_date, setDate] = useState({
     year: new Date().getFullYear(),
     month: new Date().getMonth(),
   });
+
+  const handleOrderClick = (id) => navigate("/admin/update/order/" + id);
 
   useEffect(() => {
     fetch(`${API_URL}/rooms`)
@@ -31,65 +32,16 @@ function DemoChess() {
   }, []);
 
   useEffect(() => {
+    setLoading(true);
     const ordersObj = {};
-    orders
-      .filter(
-        (order) =>
-          order.status !== "deleted" &&
-          order.filial?.filial_name === dataUser.filial.filial_name,
-      )
-      .forEach((order) => {
-        const key = [
-          new Date(order.arrival_date).getFullYear(),
-          new Date(order.arrival_date).getMonth(),
-          new Date(order.arrival_date).getDate(),
-          order.rooms.id,
-        ].join("-");
-        ordersObj[key] = {
-          id: order.id,
-          text: `${order?.users[0]?.name} \n${order.users[0]?.phone}`,
-          start: new Date(order.arrival_date).toISOString(),
-          end: new Date(order.departure_date).toISOString(),
-          backColor: getRandomColor(),
-          status: order.status,
-          title: `имя админ : ${order.staff.staff_name} ${
-            order.staff.staff_surname
-          } \nВремя бронирования: ${order.createdAt.slice(
-            0,
-            10,
-          )}  \nкомпания : ${order.company}  \nИмя: ${order.users[0]?.name} ${
-            order.users[0]?.surname
-          } \nколичество гостей : ${order.count_users} \nТип номера: ${
-            order.rooms.type
-          }   \nНомер телефона: ${order.users[0]?.phone} \nБронировоние: ${
-            order.booking
-          } \nКоментарий: ${
-            order.comentary
-          }  \nДата заезда : ${order.arrival_date.slice(
-            0,
-            10,
-          )} \nВремя заезда: ${order.arrival_date.slice(
-            12,
-            16,
-          )} \nДата выезда: ${order.departure_date.slice(
-            0,
-            10,
-          )} \nВремя выезда: ${order.arrival_date.slice(12, 16)} `,
-        };
-      });
+    initOrders(orders, ordersObj, handleOrderClick);
+    setDataSource(initDataSource(rooms));
 
     setColumns(
-      _date && setMonthFn(_date.year, _date.month, t("Settings.0"), ordersObj),
+      _date && setMonthFn(_date.year, _date.month, t("Settings.0"), ordersObj)
     );
-  }, [_date, orders]);
-
-  const resource = rooms
-    .filter((room) => room.filial?.filial_name === dataUser.filial.filial_name)
-    .map((room) => ({
-      id: room.id,
-      key: "" + room.id + room.rooms,
-      room: <span id={room.id}>{room.rooms}</span>,
-    }));
+    setLoading(false);
+  }, [_date, orders, rooms]);
 
   return (
     <div>
@@ -97,7 +49,7 @@ function DemoChess() {
         <DatePicker
           format={"YYYY-MMMM"}
           defaultValue={dayjs(
-            _date ? new Date(_date.year, _date.month, 1) : new Date(),
+            _date ? new Date(_date.year, _date.month, 1) : new Date()
           )}
           placement={"bottomLeft"}
           onChange={(val) => setDate(val && { year: val.$y, month: val.$M })}
@@ -108,13 +60,12 @@ function DemoChess() {
       {columns && (
         <Table
           columns={columns}
-          dataSource={resource}
+          dataSource={dataSource}
           bordered
           pagination={false}
-          size="middle"
+          loading={loading}
           scroll={{
-            x: "100vw",
-            y: "100vh",
+            x: true,
           }}
         />
       )}
@@ -136,10 +87,10 @@ function getRandomColor() {
     "#ff7f50",
   ];
 
-  return colors[Math.floor(Math.random() * (colors.length + 1))];
+  return colors[String(Math.random()).replace(".", "") % colors.length];
 }
 
-function setMonthFn(years, month, roomName, events) {
+function setMonthFn(years, month, roomName, ordersObj) {
   const columns = [
     {
       title: <span style={{ whiteSpace: "nowrap" }}> {roomName}</span>,
@@ -154,7 +105,7 @@ function setMonthFn(years, month, roomName, events) {
         localStorage.getItem("i18nextLng") || "en",
         {
           month: "long",
-        },
+        }
       ),
       key: "rootTitle",
       children: [],
@@ -166,39 +117,86 @@ function setMonthFn(years, month, roomName, events) {
       length: new Date(years, month + 1, 0).getDate(),
     },
     (_, i) => {
-      console.log(_);
-
+      i++;
       columns[1].children.push({
-        title: i + 1,
-        dataIndex: i + 1,
-        key: `${years}-${month}-${i + 1}`,
-        render: (
-          _,
-          {
-            room: {
-              props: { id, children },
-            },
-          },
-        ) => {
-          const key = [years, month, i + 1, id].join("-");
-          const event = events[key];
-          return event ? (
-            <div
-              key={key}
-              style={{
-                background: event.backColor,
-                color: "white",
-                cursor: "pointer",
-              }}
-              title={event.title}
-            >
-              <span style={{ whiteSpace: "nowrap" }}>{event.text}</span>
-            </div>
-          ) : null;
+        title: <span style={{ whiteSpace: "nowrap" }}>{i}</span>,
+        dataIndex: i,
+        key: `${years}-${month}-${i}`,
+        render: (_, { id }) => {
+          const dateCol = new Date(years, month, i).getTime();
+          const found = ordersObj[id]?.filter(
+            (item) =>
+              new Date(item.props.startdate).setHours(0, 0, 0, 0) <= dateCol &&
+              new Date(item.props.enddate).getTime() >= dateCol
+          );
+          return found?.length ? found : null;
         },
       });
-    },
+    }
   );
 
   return columns;
+}
+
+function initDataSource(rooms) {
+  const dataUser = JSON.parse(window.localStorage.getItem("AuthDataUser"));
+
+  return rooms
+    .filter((room) => room.filial?.filial_name === dataUser.filial.filial_name)
+    .map((room) => ({
+      id: room.id,
+      key: "" + room.id + room.rooms,
+      room: <span id={room.id}>{room.rooms}</span>,
+    }));
+}
+
+function initOrders(orders, object, handleClick) {
+  const dataUser = JSON.parse(window.localStorage.getItem("AuthDataUser"));
+
+  orders
+    .filter(
+      (order) =>
+        order.status !== "deleted" &&
+        order.filial?.filial_name === dataUser.filial.filial_name
+    )
+    .forEach((order) => {
+      object[order.rooms.id] ||= [];
+
+      object[order.rooms.id].push(
+        <div
+          onClick={() => handleClick(order.id)}
+          className={"table-order"}
+          id={order.id}
+          key={"" + order.rooms.id + order.id}
+          title={`имя админ : ${order.staff.staff_name} ${
+            order.staff.staff_surname
+          } 
+          \nВремя бронирования: ${dayjs(order.createdAt).format(
+            "DD.MM.YYYY HH:mm"
+          )}  
+          \nкомпания : ${order.company}  
+          \nИмя: ${order.users[0]?.name} ${order.users[0]?.surname} 
+          \nколичество гостей : ${order.count_users} 
+          \nТип номера: ${order.rooms.type}   
+          \nНомер телефона: ${order.users[0]?.phone} 
+          \nБронировоние: ${order.booking} 
+          \nКоментарий: ${order.comentary}  
+          \nДата заезда : ${dayjs(order.arrival_date).format("DD.MM.YYYY")} 
+          \nВремя заезда: ${dayjs(order.arrival_date).format("HH:mm")} 
+          \nДата выезда: ${dayjs(order.departure_date).format("DD.MM.YYYY")} 
+          \nВремя выезда: ${dayjs(order.departure_date).format("HH:mm")} `}
+          startdate={new Date(order.arrival_date).toISOString()}
+          enddate={new Date(order.departure_date).toISOString()}
+          style={{ backgroundColor: getRandomColor(), color: "white" }}
+          orderstatus={order.status}
+        >
+          <span style={{ whiteSpace: "nowrap" }}>
+            {`ID: ${order.id} - ` + (order?.users[0]?.name || "unknown")}
+          </span>
+          <span style={{ whiteSpace: "nowrap" }}>
+            {order.users[0]?.phone || "unknown"}
+          </span>
+        </div>
+      );
+    });
 }
