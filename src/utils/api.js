@@ -1,1 +1,1 @@
-export const API_URL = 'http://localhost:1010' || 'https://api.hotelshoshmodern.uz'
+export const API_URL = "https://api.hotelshoshmodern.uz";
